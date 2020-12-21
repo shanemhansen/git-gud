@@ -1,5 +1,11 @@
 # git-gud
-git gud with the power of emacs and git
+git gud with the power of emacs and git. Just add `git-gud` to a directory in your $PATH and invoke with
+
+```bash
+git gud filename
+```
+
+It will open up emacs in `GUD` mode.
 
 ## What is it?
 
