@@ -1,0 +1,7 @@
+#!/bin/bash
+
+FNAME="$1"
+if [[ "$FNAME" == *.go ]] ; then
+   EXENAME="${FNAME%.*}"
+fi
+emacs -nw "--eval=(progn (find-file \"$FNAME\") (split-window-right) (gdb \"gdb -i=mi $EXENAME\"))"
